@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		img{
+			width:100%;
+		}
+	</style>
+</head>
+<body>
+
+	<img id="t" src="" alt="">
+
+	<script>
+		var t = document.getElementById('t');
+		~function a(){
+			setTimeout(function(){
+				t.src = './IMG.jpg?r='+Math.random();
+				a();		
+			},500);
+		}();
+		
+	</script>
+</body>
+</html>
