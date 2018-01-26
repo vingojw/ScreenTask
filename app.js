@@ -87,5 +87,5 @@ var server = http.createServer(function (request, response) {
     });
 });
 server.listen(port, hostName, function () {
-    console.log(`服务器运行在http: //${hostName}:${port}`);
+    console.log(`服务器运行在 http://${hostName}:${port}`);
 });
